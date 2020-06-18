@@ -1,0 +1,18 @@
+1.  stdint.h declares integer types with specific widths .
+2.  uint8_t, unitn16_t, uint32_t, and uint64_t are equivilant to newer unsigned data types,
+    such as char, short, int, and long long. Recommended use is when representing a bit pattern
+    or defined modulo overflow.
+3.  a BYTE is one BYTE, DWORD contains 4 bytes, Long contains 4 Bytes, WORD contains 2 Bytes
+4.  The first two bytes of a BMP file are BM in ASCII
+5.  The difference between bfSize and biSize is
+    bfSize is the size of the entire file, where
+    biSize is the number of bytes required by the BITMAPINFOHEADER.
+6.  If biHeight is negative the top row is at the end of the BMP file.
+7.  The field that specifies the BMP's color depth in BITMAPINFOHEADER is biClrUsed.
+8.  fopen might return NULL in lines 24 and 32 of copy.c because it failed to read
+    or failed to write to the file.
+9.  The third argument to fread is always 1 in the code because fread is told to read
+    one element.
+10. In copy.c line 65 assigns 3 to padding if bi.biWidth is 3.
+11. fseek sets the file position of the stream to go to the given offset.
+12. SEEK_CUR is the current postion of the file pointer.

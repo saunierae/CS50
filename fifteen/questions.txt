@@ -1,0 +1,4 @@
+0. Minimum 3 x 3, Maximum 9 x 9.
+1. 2D Array.
+2. greet().
+3. initialize, draw, move, and won.
